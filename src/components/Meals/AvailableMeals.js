@@ -29,10 +29,13 @@ const DUMMY_MEALS = [
   },
 ];
 
+//  <MealItem id={meal.id}     BAGONG LAGAY!
+
 const AvailableMeals = () => {
   // helper constant - sa pag iterate sa meals
   const mealsList = DUMMY_MEALS.map((meal) => (
     <MealItem
+      id={meal.id}
       key={meal.id}
       name={meal.name}
       description={meal.description}
