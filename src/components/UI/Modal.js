@@ -5,12 +5,12 @@ import ModalOverlay from './ModalOverlay';
 
 const portalElement = document.getElementById('overlays');
 
-// received props from Cart.js { onClose }
+// received props from Cart.js { onCloseCart }
 const Modal = (props) => {
   return (
     <Fragment>
       {reactDom.createPortal(
-        <Backdrop onClose={props.onClose} />,
+        <Backdrop onCloseCart={props.onCloseCart} />,
         portalElement
       )}
       {reactDom.createPortal(
