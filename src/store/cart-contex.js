@@ -1,5 +1,6 @@
 import React from 'react';
 
+// inital value - for IDE semantic purposes.
 const CartContext = React.createContext({
   items: [],
   totalAmount: 0,
